@@ -60,14 +60,17 @@ padding: 0 30px;
   width: auto;
   height: auto;
   border-radius: 50%;
-  border: 10px solid;
+  border: 3px solid;
+  border-color:rgb(42, 41, 41);
   margin: 30px;
-  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .myself {
   padding: 200px;
-  border: 10px solid;
+  border: 3px solid;
   margin: 0px;
   background-size: cover;
   background-position: center;
@@ -95,9 +98,3 @@ h6 {
 p {
   margin: 0;
 }
-
-display: block;
-position: relative;
-padding: 0;
-overflow: hidden;
-float: left;
