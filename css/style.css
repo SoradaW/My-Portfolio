@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  line-height: 1.5;
+  color: aliceblue;
 }
 
 header {
@@ -12,17 +12,19 @@ header {
   float: auto;
   font-size: 20px;
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: block;
-  background-color: rgb(175, 148, 172);
+  background-color: black;
 }
 
 h1 {
   display: inline-block;
   font-size: 48px;
+  color: aliceblue;
 }
 
 span {
+  display: inline-block;
   color: brown;
   font-style: italic;
 }
@@ -38,34 +40,41 @@ nav a:last-child {
 
 nav li {
   height: 100%;
-  display: table;
+  display: block;
   float: left;
+  text-align: center;
+  overflow: hidden;
 }
 
 nav li a {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  color: rgb(252, 252, 252);
-  font-size: 20px;
-  padding: 0 50px;
+display: block;
+position: relative;
+padding: 0;
+float: left;
+color: rgb(252, 252, 252);
+font-size: 20px;
+padding: 0 30px;
 }
 
-.background {
-  height: 500px;
-  width: 100%;
-  margin-bottom: 25px;
+.me {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  border: 10px solid;
+  margin: 30px;
+  vertical-align: middle;
+}
+
+.myself {
   padding: 200px;
   border: 10px solid;
-  background-image: url(images\background.jpg);
+  margin: 0px;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  font-style: italic;
 }
 
-.background h2 {
-  color: rgb(81, 203, 15);
+.myself h2 {
+  color: rgb(253, 254, 252);
   height: 100%;
   font-weight: 100;
   float: right;
@@ -87,3 +96,8 @@ p {
   margin: 0;
 }
 
+display: block;
+position: relative;
+padding: 0;
+overflow: hidden;
+float: left;
