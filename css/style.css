@@ -8,52 +8,91 @@
 
 header {
   padding-top: 20px;
-  margin-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
   float: auto;
   font-size: 20px;
   width: 100%;
   height: 100px;
   display: block;
-  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 h1 {
   display: inline-block;
   font-size: 48px;
   color: aliceblue;
+  padding-left: 50px;
 }
 
 span {
   display: inline-block;
   color: brown;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
 }
 
-nav {
-  float: right;
-  height: 100%;
-}
-
-nav a:last-child {
-  padding-right: 60px;
-}
-
-nav li {
-  height: 100%;
-  display: block;
-  float: left;
-  text-align: center;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
-nav li a {
-display: block;
-position: relative;
-padding: 0;
-float: left;
-color: rgb(252, 252, 252);
-font-size: 20px;
-padding: 0 30px;
+li {
+  float: right;
+  font-size: x-large;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(247, 125, 125);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(192, 187, 187);
+  min-width: 160px;
+  z-index: 1;
+  font-weight: bold;
+  font-size: large;
+}
+
+.dropdown-content a {
+  color: rgb(31, 30, 30);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.myself {
+  padding: 200px;
+  margin: 0px;
+  background-size: cover;
+  background-position: center;
 }
 
 .me {
@@ -62,39 +101,31 @@ padding: 0 30px;
   border-radius: 50%;
   border: 3px solid;
   border-color:rgb(42, 41, 41);
-  margin: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.myself {
-  padding: 200px;
-  border: 3px solid;
-  margin: 0px;
-  background-size: cover;
-  background-position: center;
-}
-
-.myself h2 {
-  color: rgb(253, 254, 252);
-  height: 100%;
-  font-weight: 100;
-  float: right;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 p {
-  margin: 0;
+  font-size: 50px;
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  height: auto;
+  color: white;
+  text-align: justify;
+}
+
+
+/* footer */
+
+
+footer {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  color: rgb(252, 252, 252);
+  font-size: 16px;
+  text-align: center;
 }
