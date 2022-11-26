@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: cursive;
   color: aliceblue;
 }
 
@@ -16,14 +16,14 @@ header {
   width: 100%;
   height: 100px;
   display: block;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
 
 h1 {
   display: inline-block;
-  font-size: 48px;
+  font-size: 65px;
   padding-left: 50px;
   position: relative;
   margin: 0;
@@ -32,6 +32,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   line-height: 1.2em;
+  font-style: italic;
 }
 
 h1:before {
@@ -119,22 +120,18 @@ li.dropdown {
   margin: 0px;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
-.me {
-  width: auto;
+.image {
+  width: 50%;
   height: auto;
   border-radius: 50%;
   border: 3px solid;
-  border-color:rgb(42, 41, 41);
+  border-color:rgb(137, 122, 139);
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.me:hover {
-  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
 }
 
 .overlay {
@@ -150,9 +147,10 @@ li.dropdown {
   text-align: center;
 }
 
-.myself:hover .overlay {
+.myself:hover .overlay{
   opacity: 1;
 }
+
 
 /* about me*/
 p {
