@@ -7,13 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>S Wright | New Web Developer</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- JS <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="./email.js"></script> -->
   <body style="background-color:rgb(7, 7, 7)"></body>
 </head>
 
 
 <body>
-  <!-- main log/ nav -->
-  <header>
+  <!-- main logo/ header nav -->
+  <header id="header">
     <ul>
       <h1 data-text="SW">SW</h1>
       <li class="dropdown">
@@ -55,23 +57,30 @@
       </p>
     </section>
 
-  <!-- footer -->
-   <footer>
-    <nav>
-      <li>
-        <a href="#">Link1</a>
-      </li>
-      <li>
-        <a href="#">Link2</a>
-      </li>
-      <li>
-        <a href="#">Link3</a>
-      </li>
-    </nav>
-
-   </footer>
+  <!--contact section--> 
+    <section class="email_me">
+      <h3>Drop me an Email 📩</h3>
+      <form action="">
+        <input type="text" class="full_name" placeholder="Full name*">
+        <input type="email" class="email" placeholder="Email*">
+        <textarea name="" id="" cols="30" rows="10" class="message" placeholder="Message*"></textarea>
+        <div class="status"></div>
+        <button type="submit" class="submit">
+            Submit
+        </button>
+    </form>
+    </section>
   </main>
 
-</body>
+  <!-- footer -->
+   <footer>
+        <section>
+          <p class="p3"><a href="#header">Back to top ⤴</a></p>
+          <p class="p4">All rights reserved | © 2022 Sorada Wright </p>
+         </section>
+      
+   </footer>
+  
 
+</body>
 </html>
