@@ -5,7 +5,7 @@
   color: aliceblue;
 }
 
-/* main log */
+/* main logo */
 header {  
   box-sizing: border-box;
   padding: 40px;
@@ -16,7 +16,6 @@ header {
   height: 100%;
   display: block;
   top: 0;
-  position: sticky;
 }
 
 h1 {
@@ -41,7 +40,7 @@ h1:before {
   width: 100%;
   overflow: hidden;
   animation: animate 8s linear infinite;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   color: #f1f1f1;
   font-style: italic;
@@ -56,7 +55,7 @@ h1:before {
     }
 }
 
-/* nav */
+/* header nav */
 ul {
   list-style-type: none;
   margin: 0;
@@ -164,28 +163,65 @@ li.dropdown {
 
 .body_text {
   display: block;
-  margin: 0 auto;
-  width: 1000px;
-  height: auto;
   color: white;
   text-align: justify;
+  box-sizing: border-box;
+  margin-left: 22%;
+  margin-right: 22%;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 51px;
   padding: 20px;
 }
 
 .p1 {
   font-size: 38px;
-  padding: 20px;
+  padding: 20px; 
 }
 
 .p2 {
   font-size: 38px;
   padding: 20px;
+  padding-bottom: 15%;
 }
 
+/* contact section*/
+.email_me {
+  margin-left: 23%;
+}
+
+h3 {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+input, textarea {
+  display: block;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 0.8rem 1rem;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+button {
+  box-sizing: border-box;
+  padding: 0.8rem 1rem;
+  border-radius: 7px;
+  margin-bottom: 10%;
+  color: black;
+  background-color: rgb(116, 117, 114);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button, input, textarea {
+  font: inherit;
+  color: black;
+}
 
 /* footer */
 
@@ -197,4 +233,34 @@ footer {
   color: rgb(252, 252, 252);
   font-size: 16px;
 }
+
+footer {
+  box-sizing: border-box;
+  padding: 40px;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-bottom: 2%;
+}
+
+.p3 {
+  font-size: small;
+  font-weight: lighter;
+  text-align: center;
+  padding: 10px;
+}
+
+span {
+  font-size: large;
+  position: relative;
+  text-align: center;
+}
+
+.p4 {
+  font-style: italic;
+  font-size: small;
+  font-weight: lighter;
+  text-align: center;
+  }
 
