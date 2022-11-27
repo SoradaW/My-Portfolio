@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: cursive;
@@ -7,17 +6,16 @@
 }
 
 /* main log */
-header {
-  padding-top: 20px;
+header {  
+  box-sizing: border-box;
+  padding: 40px;
   margin-right: auto;
   margin-left: auto;
-  float: auto;
   font-size: 20px;
   width: 100%;
-  height: 100px;
+  height: 100%;
   display: block;
   top: 0;
-  position: -webkit-sticky; /* Safari */
   position: sticky;
 }
 
@@ -114,58 +112,82 @@ li.dropdown {
   display: block;
 }
 
-/* myPic*/
+/* my image*/
 .myself {
-  padding: 200px;
-  margin: 0px;
+  padding: 150px;
+  margin: 0;
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.image {
+.container {
   width: 50%;
   height: auto;
-  border-radius: 50%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.container .image {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
   border: 3px solid;
-  border-color:rgb(137, 122, 139);
-  display: block;
+  border-color:rgb(139, 136, 139);
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
 }
 
-.overlay {
-  position: absolute; 
-  bottom: 20; 
-  background: rgba(7, 7, 7, 0.5); /* Black see-through */
-  width: 1450px;
-  transition: .5s ease;
+.top_image {
+  position: absolute;
+  left: 0;
+  top: 0;
   opacity: 0;
-  color: white;
-  font-size: 30px;
-  padding: 20px;
-  text-align: center;
+  width: 99%;
+  height: 99%;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color:rgb(145, 150, 112);
+  transition: .5s ease;
 }
 
-.myself:hover .overlay{
+.top_image:hover {
   opacity: 1;
 }
 
 
 /* about me*/
-p {
-  font-size: 50px;
+
+.body_text {
   display: block;
   margin: 0 auto;
   width: 1000px;
   height: auto;
   color: white;
-  text-align: center;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 48px;
+  padding: 20px;
+}
+
+.p1 {
+  font-size: 38px;
+  padding: 20px;
+}
+
+.p2 {
+  font-size: 38px;
+  padding: 20px;
 }
 
 
 /* footer */
-
 
 footer {
   display: table-cell;
