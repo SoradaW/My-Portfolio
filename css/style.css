@@ -198,7 +198,6 @@ li.dropdown {
   display: grid;
   grid-gap: 10px;
   padding: 20px;
-  padding-bottom: 5%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 300px 300px 300px 300px;
   background-color: rgb(7, 7, 7);
@@ -307,7 +306,7 @@ footer {
   color: rgb(252, 252, 252);
   font-size: 18px;
   display: block;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 footer .p3 {
   font-weight: lighter;
