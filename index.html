@@ -13,104 +13,85 @@
 <body>
   <!-- main logo/ header nav -->
   <header id="header">
-    <ul>
+    <nav>
       <h1 data-text="SW">SW</h1>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Contact Me</a>
+      <section id="navigation">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#my_work">Work</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Contact Me</a>
         <section class="dropdown-content">
-          <a href="https://www.linkedin.com/in/sorada-wright-8985491a7/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/SoradaW" target="_blank">GitHub</a>
-          <a href="mailto:sorada.wright@gmail.com" target="_blank">Email Me</a>
+          <a href="https://www.linkedin.com/in/sorada-wright-8985491a7/" target="_blank"> ☑️ LinkedIn</a>
+          <a href="https://github.com/SoradaW" target="_blank"> ☑️ GitHub</a>
+          <a href="mailto:sorada.wright@gmail.com" target="_blank"> ☑️ Email Me</a>
         </section>
-      </li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About Me</a></li>
-    </ul>
+        </li>
+      </section>
+    </nav>
   </header>
 
   <!-- my image -->
-  <section class="myself">
-    <section class="container">
+  <section id="my_picture">
+    <div class="img_container">
       <img class="image" src="images/myAvatar.jpg" alt="It's my avatar">
       <img class="top_image" src="images/Itsme.jpg" alt="It's me">
-    </section>
+    </div>
+  </section>
+  <section  id="about" class="hello">
+    <h2><span>Hi there!</span>👋🏻 I'm Sorada Wright [Suzie]</h2>
   </section>
 
   <main>
   <!-- about me -->
-    <section id="about" class="body_text">
-      <h2>Hi there!👋🏻 I'm Sorada Wright  [Suzie]</h2>
+  <section id="about_me">
+    <div class="content">
+      <p>About Me</p>
+    </div>
+  
+    <div class="main_content">
       <p class="p1">
         I was born in Bangkok, Thailand and currently live in Newmarket, UK.
-        I am a full-time employee as a production planner at Essentra Packaging (MM Packaging) Newmarket, UK.
+        I am a full-time employee as a production planner at Essentra Packaging Newmarket, UK.
       </p>
 
-      <p class="p2">                  
+      <p class="p1">                  
         I enjoy learning and developing myself and I have discovered a deeper passion for coding and web development.
-        I have joined the programme to chase my dream of being a coder and I believe that this course will provide me the opportunity. I am a very positive person and I have a strong can-do attitude. So, if I can do it, you can too!
+        I have joined the programme to chase my dream of being a coder. I am a positive person, I have a strong can-do attitude and I believe that this course will provide me the opportunity. So, if I can do it, you can too! 😉
       </p>
-    </section>
 
-  <!-- work images -->
-  <section class="work" id="work">
-    <section class="w-4 h-4">
-        <section class="gallery_item">
-            <section class="pictures">
-                <a href="#">
-                    <img src="images/portfolio-1.jpg" alt="Portfolio-1">
-                </a>
-            </section>
-            <section class="text">You Got This</section>
-        </section>
-    </section>
+      <p class="p2">
+        DREAM IT > BELIEVE IT > DO IT = SUCCESS
+      </p>
+    </div>
 
-    <section class="w-2 h-2">
-        <section class="gallery_item">
-            <section class="pictures">
-                <a href="#">
-                    <img src="images/portfolio-2.jpg" alt="Portfolio-2">
-                </a>
-            </section>
-            <section class="text">Learning</section>
-        </section>
-    </section>
-
-    <section class="w-2 h-2">
-        <section class="gallery_item">
-            <section class="pictures">
-                <a href="#">
-                    <img src="images/portfolio-3.jpg" alt="Portfolio-3">
-                </a>
-            </section>
-            <section class="text">Love</section>
-        </section>
-    </section>
-
-    <section class="w-2 h-2">
-        <section class="gallery_item">
-            <section class="pictures">
-                <a href="#">
-                    <img src="images/portfolio-4.jpg" alt="Portfolio-4">
-                </a>
-            </section>
-            <section class="text">Coffee</section>
-        </section>
-    </section>
-
-    <section class="w-2 h-2">
-        <section class="gallery_item">
-            <section class="pictures">
-                <a href="#">
-                    <img src="images/portfolio-5.jpg" alt="Portfolio-5">
-                </a>
-            </section>
-            <section class="text">Passion</section>
-        </section>
-    </section>
+    <div class="side_space"></div>
   </section>
 
-  <!--contact section--> 
-  <section class="email_me">
+  <!-- work images -->
+  <section id="my_work">
+      <div id="img1"  class="gallery_items">
+        <div class="img_text">No work link contains...>>> WIP</div>
+      </div>
+
+      <div id="img2"  class="gallery_items">
+        <div class="img_text">No work link contains...>>> WIP</div>
+      </div>
+
+      <div id="img3"  class="gallery_items">
+        <div class="img_text">No work link contains...>>> WIP</div>
+      </div>
+
+      <div id="img4"  class="gallery_items">
+        <div class="img_text">No work link contains...>>> WIP</div>
+      </div>
+    
+      <div id="img5"  class="gallery_items">
+        <div class="img_text">No work link contains...>>> WIP</div>
+      </div>
+  </section>
+
+  <!--email contact WIP
+  <section id="email_me">
     <h3>Drop me an Email 📩</h3>
     <form action="">
       <input type="text" class="full_name" placeholder="Full name*">
@@ -121,16 +102,18 @@
       </button>
     </form>
   </section>
+  --> 
+
 </main>
 
   <!-- footer -->
-   <footer>
-        <section>
-          <p class="p3"><a href="#header">Back to top ⤴</a></p>
-          <p class="p4">All rights reserved | © 2022 Sorada Wright </p>
-         </section>
+<footer>
+  <div>
+    <p class="p3"><a href="#header">Back to top ⤴</a></p>
+    <p class="p4">All rights reserved | © 2022 Sorada Wright </p>
+  </div>
       
-   </footer>
+</footer>
   
 
 </body>
