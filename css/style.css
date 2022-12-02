@@ -8,6 +8,7 @@
 :root {
   --border-image: 2px solid rgb(230, 223, 210);
   --border-box: 2px solid grey;
+  --bgnav: rgba(54, 51, 51, 0.8);
 }
 
 /* main logo */
@@ -61,7 +62,6 @@ nav {
   display: flex;
   width: 100%;
   align-items: end;
-  padding: 10px;
   justify-content: flex-end;
 }
 li {
@@ -77,6 +77,7 @@ li a, .dropbtn {
 li a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(6, 6, 6);
   border: var(--border-box);
+  background-color: var(--bgnav);
 }
 li.dropdown {
   display: inline-block;
@@ -97,7 +98,7 @@ li.dropdown {
   border: var(--border-box);
 }
 .dropdown-content a:hover {
-  background-color: rgba(54, 51, 51, 0.8);
+  background-color: var(--bgnav);
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -185,14 +186,18 @@ li.dropdown {
 .p2 {
   text-align: center;
 }
-
+.p2 span {
+  padding: 15px;
+  text-decoration: underline;
+  text-decoration-style: double;
+  font-size: 36px;
+}
 /* work images */
 #my_work {
   margin: 0px 5%;
   display: grid;
   grid-gap: 10px;
   padding: 20px;
-  padding-bottom: 5%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 300px 300px 300px 300px;
   background-color: rgb(7, 7, 7);
@@ -299,9 +304,9 @@ footer {
   width: 100%;
   height: auto;
   color: rgb(252, 252, 252);
-  font-size: 20px;
+  font-size: 18px;
   display: block;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 footer .p3 {
   font-weight: lighter;
