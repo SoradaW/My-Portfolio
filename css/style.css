@@ -149,6 +149,7 @@ li.dropdown {
 .hello span {
   font-size: 48px;
   font-style: italic;
+  color: rgb(159, 185, 226);
 }
 
 /* about me section*/
@@ -189,8 +190,8 @@ li.dropdown {
   padding: 15px;
   text-decoration: underline;
   text-decoration-style: double;
-  font-size: 36px;
-  color: rgb(104, 137, 189);
+  font-size: 40px;
+  color: rgb(159, 185, 226);
 }
 
 /* work/projects images (links) */

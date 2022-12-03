@@ -9,6 +9,11 @@ My goals for the project:
 3. To create a clean, readable on various screens and devices  
 4. To grow my knowledge and developing of my portfolio site
 
+## My portfolio site
+
+How it looks like:
+![My portfolio site](/images/myPorfolio-webCapture.png)
+
 ## License
 
 This project is licensed under the MIT License
