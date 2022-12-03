@@ -12,7 +12,17 @@ My goals for the project:
 ## My portfolio site
 
 How it looks like:
+
 ![My portfolio site](/images/myPorfolio-webCapture.png)
+
+Instructions:
+
+* When the page is loaded, 'SW' (my initial) animation will play
+* When clicked in the navigation bar, then user should be taken to its section
+* When clicked drop down list, user should be taken to that deployed application in new tab
+* When hover to avatar image, then my image will appears
+* When hover to project images section, then that image should be larger in size than the others, box-shadow colour should appear and presented with text information   
+* When clicked back to top button, user will be taken to the top of the page
 
 ## License
 
