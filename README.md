@@ -24,6 +24,10 @@ How it looks like:
 * When hover to project images section, then that image should be larger in size than the others, box-shadow colour should appear and presented with text information   
 * When clicked back to top button, user will be taken to the top of the page
 
+## Link to deployed application
+
+https://soradaw.github.io/My-Portfolio/
+
 ## License
 
 This project is licensed under the MIT License
