@@ -190,6 +190,7 @@ li.dropdown {
   text-decoration: underline;
   text-decoration-style: double;
   font-size: 36px;
+  color: rgb(104, 137, 189);
 }
 
 /* work/projects images (links) */
@@ -220,7 +221,7 @@ li.dropdown {
 }
 #img3 {
   grid-area: img3;
-  background-image: url(../images/lamp.jpg);
+  background-image: url(../images/lamp.png);
 }
 #img4 {
   grid-area: img4;
@@ -228,7 +229,7 @@ li.dropdown {
 }
 #img5 {
   grid-area: img5;
-  background-image: url(../images/laptop.jpg);
+  background-image: url(../images/laptop.png);
 }
 .gallery_items {
   background-position: center;
