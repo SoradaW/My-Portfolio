@@ -324,7 +324,7 @@ footer .p4 {
     }
   }
 
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 600px) {
     #my_work {
       grid-template-columns: 1fr;
       grid-template-rows: 300px 300px 300px 300px 300px;
