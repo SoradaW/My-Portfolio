@@ -15,7 +15,7 @@ How it looks like:
 
 ![My portfolio site](/images/myPorfolio-webCapture.png)
 
-Instructions:
+## Instructions
 
 * When the page is loaded, 'SW' (my initial) animation will play
 * When clicked in the navigation bar, then user should be taken to its section
