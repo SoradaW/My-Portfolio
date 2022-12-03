@@ -6,12 +6,11 @@
 }
 
 :root {
-  --border-image: 2px solid rgb(230, 223, 210);
   --border-box: 2px solid grey;
   --bgnav: rgba(54, 51, 51, 0.8);
 }
 
-/* main logo */
+/* main logo SW*/
 header {  
   padding: 40px;
   font-size: 20px;
@@ -50,7 +49,7 @@ h1:before {
     }
 }
 
-/* header nav */
+/* header navbar */
 nav {
   margin: 0px 5%;
   display: flex;
@@ -104,7 +103,7 @@ li.dropdown {
   display: block;
 }
 
-/* my image*/
+/* my image section*/
 #my_picture {
   margin: 0px 5%;
   padding: 100px;
@@ -152,7 +151,7 @@ li.dropdown {
   font-style: italic;
 }
 
-/* about me*/
+/* about me section*/
 #about_me {
   margin: 5%;
   display: grid;
@@ -192,7 +191,8 @@ li.dropdown {
   text-decoration-style: double;
   font-size: 36px;
 }
-/* work images */
+
+/* work/projects images (links) */
 #my_work {
   margin: 0px 5%;
   display: grid;
@@ -213,27 +213,22 @@ li.dropdown {
 #img1 {
   grid-area: img1;
   background-image: url(../images/coffee.jpg);
-  border: var(--border-image); 
 }
 #img2 {
   grid-area: img2;
   background-image: url(../images/nature_scene.png);
-  border: var(--border-image); 
 }
 #img3 {
   grid-area: img3;
   background-image: url(../images/lamp.jpg);
-  border: var(--border-image);
 }
 #img4 {
   grid-area: img4;
   background-image: url(../images/book.png);
-  border: var(--border-image);
 }
 #img5 {
   grid-area: img5;
   background-image: url(../images/laptop.jpg);
-  border: var(--border-image); 
 }
 .gallery_items {
   background-position: center;
@@ -248,6 +243,7 @@ li.dropdown {
 }
 .gallery_items:hover {
   transform: scale(1.015);
+  box-shadow: inset 0px 0px 10px rgb(239, 6, 235);
 }
 .img_text {
   opacity: 0;
@@ -256,7 +252,7 @@ li.dropdown {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
-  color: rgb(24, 17, 221);
+  color: rgb(239, 6, 235);
   font-style: italic;
   padding: 15px;
   height: 25px;
@@ -266,7 +262,7 @@ li.dropdown {
   opacity: 1;
 }
 
-/* email contact section WIP
+/* email contact section...WIP
 #email_me {
   margin-left: 23%;
 }
@@ -326,7 +322,7 @@ footer .p4 {
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 300px) {
     #my_work {
       grid-template-columns: 1fr;
       grid-template-rows: 300px 300px 300px 300px 300px;
