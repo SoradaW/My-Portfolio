@@ -214,23 +214,23 @@ li.dropdown {
 
 #img1 {
   grid-area: img1;
-  background-image: url(../images/coffee.png);
+  background-image: url(../images/coffee.jpg);
 }
 #img2 {
   grid-area: img2;
-  background-image: url(../images/nature_scene.png);
+  background-image: url(../images/nature_scene.jpg);
 }
 #img3 {
   grid-area: img3;
-  background-image: url(../images/lamp.png);
+  background-image: url(../images/lamp.jpg);
 }
 #img4 {
   grid-area: img4;
-  background-image: url(../images/book.png);
+  background-image: url(../images/book.jpg);
 }
 #img5 {
   grid-area: img5;
-  background-image: url(../images/laptop.png);
+  background-image: url(../images/laptop.jpg);
 }
 .gallery_items {
   background-position: center;
