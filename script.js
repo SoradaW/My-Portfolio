@@ -60,11 +60,12 @@ document.body.addEventListener("mouseleave", () =>{
 });
 
 //main button
-const mainBtn = document.querySelector(".main-btn");
+const mainBtns = document.querySelectorAll(".main-btn");
 
-let ripple;
+mainBtns.forEach((btn) => {
+  let ripple;
 
-mainBtn.addEventListener("mouseenter", (e) => {
+  btn.addEventListener("mouseenter", (e) => {
   const left = e.clientX - e.target.getBoundingClientRect().left;
   const top = e.clientY - e.target.getBoundingClientRect().top;
 
@@ -72,10 +73,29 @@ mainBtn.addEventListener("mouseenter", (e) => {
   ripple.classList.add("ripple");
   ripple.style.left = `${left}px`;
   ripple.style.top = `${top}px`;
-  mainBtn.prepend(ripple);
-});
+  btn.prepend(ripple);
+  });
 
-mainBtn.addEventListener("mouseleave", () => {
-  mainBtn.removeChild(ripple);
-});
+  btn.addEventListener("mouseleave", () => {
+    btn.removeChild(ripple);
+  }); 
+})
+
+
 //end of main button
+
+//about me text
+const aboutMeText = document.querySelector(".about-me-text");
+const aboutMeTextContent = "สวัสดี (Hello), I'm a big believer in learning by doing and having fun!";
+
+Array.from(aboutMeTextContent).forEach(char => {
+  const span = document.createElement("span");
+  span.textContent = char;
+  aboutMeText.appendChild(span);
+
+  span.addEventListener("mouseenter", (e) => {
+    e.target.style.animation = "aboutMeTextAnim 10s infinite";
+  });
+});
+//end of about me text
+
