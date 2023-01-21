@@ -16,6 +16,12 @@
 html{
   font-size: 62.5%;
 }
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*end of common styles*/
 
 /*mouse circle*/
@@ -81,7 +87,6 @@ html{
 }
 /*end of mouse circle*/
 
-
 /*page bg*/
 .page-bg{
   position: fixed;
@@ -91,3 +96,107 @@ html{
   background-size: cover;
 }
 /*end of page bg*/
+
+/*section 1*/
+.section-1{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/*logo*/
+.logo{
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*animated circles*/
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.circle{
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background-color: red;
+  align-self: center;
+  justify-self: center;
+  opacity: 0.5;
+}
+
+.circle-1{
+  background: url(images/book.jpg) center no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border: 0.5rem dotted #a14b1a;
+}
+
+.circle-2{
+  background: url(images/coffee.jpg) center no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border: 0.5rem dashed #ffbd07;
+}
+
+.circle-3{
+  background: url(images/lamp.jpg) center no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border: 1rem double #9b0e0e;
+}
+
+.circle-4{
+  background: url(images/laptop.jpg) center no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border: 0.7rem double #fff;
+}
+
+.main-circle{
+  width: 55rem;;
+  height: 55rem;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.main-circle img{
+  mix-blend-mode: color-dodge;
+}
+/*end of animated circles*/
+
+/*featured text*/
+.featured-text{
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  width: 0;
+  word-wrap: break-word;
+  line-height: 3.5;
+  position: sticky;
+  top: 0;
+}
+
+.featured-text-1{
+  margin: 0 auto 0 10rem;
+}
+
+.featured-text-2{
+  margin: 0 10rem 0 auto;
+}
+/*end of featured text*/
+
+
+/*end of section 1*/
