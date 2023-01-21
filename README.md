@@ -10,7 +10,7 @@ My goals and objectives:
 
 ## How deplyed site portfolio looks like:
 
-![My portfolio site](/images/myPorfolio-webCapture.png)
+![My portfolio site](/*images/myPorfolio-webCapture.png)
 
 ## Instructions
 
