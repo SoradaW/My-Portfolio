@@ -80,8 +80,6 @@ mainBtns.forEach((btn) => {
     btn.removeChild(ripple);
   }); 
 })
-
-
 //end of main button
 
 //about me text
@@ -99,3 +97,16 @@ Array.from(aboutMeTextContent).forEach(char => {
 });
 //end of about me text
 
+//projects//
+const projects = document.querySelectorAll(".project");
+
+projects.forEach((project) => {
+  project.addEventListener("mouseenter", () => {
+    project.firstElementChild.style.top = `-${project.firstElementChild.offsetHeight - project.offsetHeight + 20}px`;
+  });
+
+  project.addEventListener("mouseleave", () => {
+    project.firstElementChild.style.top = "2rem";
+  });
+});
+//end of projects//

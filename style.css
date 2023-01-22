@@ -367,3 +367,42 @@ html{
 }
 /*end of section 2 main button*/
 /*end of section 2*/
+
+/*section 3*/
+.section-3{
+  width: 100%;
+  height: 100%;
+  padding: 20rem 0 10rem 0;
+  position: relative;
+}
+
+/*projects*/
+.projects{
+  flex-wrap: wrap;
+  padding-bottom: 15rem;
+}
+
+.project{
+  width: 40rem;
+  height: 45rem;
+  overflow: hidden;
+  margin: 5rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 0.2rem dotted #9b0e0e;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.project img {
+  width: 90%;
+  object-fit: cover;
+  position: absolute;
+  top: 2rem;
+  transition: top 4s;
+}
+/*end of projects*/
+
+/*end of section 3*/
