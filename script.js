@@ -187,6 +187,16 @@ document.querySelectorAll(".service-btn").forEach(service => {
 
     const serviceText = service.nextElementSibling;
     serviceText.classList.toggle("change");
+
+    const rightPosition = serviceText.classList.contains("change")? `calc(100% - ${getComputedStyle(service.firstElementChild).width})`: 0;
+
+    service.firstElementChild.style.right = rightPosition;
   });
 });
 //end of section 4
+
+//section 5
+
+
+//end of section 5
+

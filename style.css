@@ -572,6 +572,7 @@ html{
   color: #9b0e0e;
   position: absolute;
   right: 0;
+  transition: right 0.5s;
 }
 
 .service-text{
@@ -581,14 +582,67 @@ html{
   height: 0;
   visibility: hidden;
   opacity: 0;
+  transition: all 0.2s;
 }
 
 .change.service-text{
   height: 15rem;
   visibility: visible;
   opacity: 1;
+  transition: height 0.5s, opacity 0.5s 0.5s;
 }
 /*end of services*/
 /*end of section 4*/
+
+/*section 5*/
+.section-5{
+  position: relative;
+  height: 100vh;
+}
+
+/*form*/
+.form-heading{
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  font-weight: bold;
+  color: #9b0e0e;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-form{
+  flex-direction: column;
+}
+
+.contact-form-input{
+  width: 60rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0.1rem solid #9b0e0e;
+  font-size: 1.7rem;
+  color: #aaa;
+  letter-spacing: 0.1rem;
+  height: 5rem;
+}
+
+.contact-form-textarea{
+  height: 20rem;
+  resize: none;
+}
+
+.form-submit-btn{
+  width: 20rem;
+  height: 5rem;
+  background-color: #9b0e0e;
+  border: none;
+  align-self: flex-start;
+  font-size: 1.8rem;
+  color: #fff;
+}
+/*end of form*/
+/*end of section 5*/
+
 
 
