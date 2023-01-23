@@ -510,4 +510,25 @@ html{
 }
 /*end of project hide button*/
 /*end of projects*/
+
+/*projects button*/
+.projects-btn{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.change > .main-btn-line:nth-child(1){
+  transform: rotateZ(45deg) translateX(-0.65rem);
+}
+
+.change > .main-btn-line:nth-child(2){
+  transform: rotateZ(-45deg) translateX(0.65rem);
+}
+
+.change > .main-btn-line:nth-child(3){
+  transform: rotateZ(90deg) translateX(-0.5rem);
+  border-left: 0.1rem solid #fff;
+  border-right: none;
+}
+/*end of projects button*/
 /*end of section 3*/

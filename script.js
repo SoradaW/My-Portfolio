@@ -102,7 +102,7 @@ const container = document.querySelector(".container");
 const projects = document.querySelectorAll(".project");
 const projectHideBtn = document.querySelector(".project-hide-btn");
 
-projects.forEach((project) => {
+projects.forEach((project, i) => {
   project.addEventListener("mouseenter", () => {
     project.firstElementChild.style.top = `-${project.firstElementChild.offsetHeight - project.offsetHeight + 20}px`;
   });
@@ -133,5 +133,37 @@ projects.forEach((project) => {
     };
   });
   //end of big project img//
+
+  i >= 3 && (project.style.cssText = "display: none; opacity: 0");
 });
+
+//projects button
+const projectsBtn = document.querySelector(".projects-btn");
+const projectsBtnText = document.querySelector(".projects-btn span");
+
+let showHideBool = true;
+
+projectsBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  projectsBtn.firstElementChild.nextElementSibling.classList.toggle("change");
+
+  projects.forEach((project, i) => {
+    if(i >= 3) {
+      if(showHideBool){
+        project.style.display = "flex";
+        project.style.opacity = "1";
+
+        projectsBtnText.textContent = "Show Less";
+      } else {
+        project.style.display = "none";
+        project.style.opacity = "0";
+
+        projectsBtnText.textContent = "Show More";
+      }
+    }
+  });
+  showHideBool = !showHideBool;
+});
+//end of projects button
 //end of projects//
