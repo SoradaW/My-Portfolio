@@ -97,7 +97,7 @@ Array.from(aboutMeTextContent).forEach(char => {
 });
 //end of about me text
 
-//projects//
+//projects
 const container = document.querySelector(".container");
 const projects = document.querySelectorAll(".project");
 const projectHideBtn = document.querySelector(".project-hide-btn");
@@ -111,7 +111,7 @@ projects.forEach((project, i) => {
     project.firstElementChild.style.top = "2rem";
   });
 
-  //big project img//
+  //big project img
   project.addEventListener("click", () => {
     const bigImgWrapper = document.createElement("div");
     bigImgWrapper.className = "project-img-wrapper";
@@ -132,7 +132,7 @@ projects.forEach((project, i) => {
       document.body.style.overflowY = "scroll";
     };
   });
-  //end of big project img//
+  //end of big project img
 
   i >= 6 && (project.style.cssText = "display: none; opacity: 0");
 });
@@ -178,4 +178,15 @@ projects.forEach((project, i) => {
   showHideBool = !showHideBool;
 });
 //end of projects button
-//end of projects//
+//end of projects
+
+//section 4
+document.querySelectorAll(".service-btn").forEach(service => {
+  service.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const serviceText = service.nextElementSibling;
+    serviceText.classList.toggle("change");
+  });
+});
+//end of section 4
