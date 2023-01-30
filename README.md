@@ -8,9 +8,9 @@ My goals and objectives:
 3. To create a clean, readable on various screens and devices  
 4. To grow my knowledge and developing of my portfolio site
 
-## How deplyed site portfolio looks like:
-
 ![My portfolio site](/*images/myPorfolio-webCapture.png)
+
+[Live Portfolio](https://soradaw.github.io/My-Portfolio/)
 
 ## Instructions
 
@@ -21,10 +21,6 @@ My goals and objectives:
 * When hover to project images section, then that image should be a little larger in size, box-shadow colour should appear and presented with text information   
 * When clicked back to top button, user will be taken to the top of the page
 * All hyperlinks had a hover effect
-
-## Link to deployed application
-
-https://soradaw.github.io/My-Portfolio/
 
 ## License
 
