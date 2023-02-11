@@ -397,7 +397,7 @@ html{
   border-radius: 0.5rem;
   cursor: pointer;
   perspective: 20rem;
-  transition: opacity 0.5s";
+  transition: opacity 0.5s;
 }
 
 .project img{
