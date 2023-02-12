@@ -199,8 +199,69 @@ html{
 }
 /*end of page bg*/
 
-/*navigation*/
+/*progress bar*/
+.progress-bar{
+  position: fixed;
+  bottom: 8rem;
+  right: 8rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 200;
+  overflow: hidden;
+}
 
+.half-circle, 
+.half-circle-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  transform-origin: right center;
+}
+
+.half-circle:nth-child(1){
+  background-color: #ff0000;
+}
+
+.half-circle:nth-child(2){
+  background-color: #ff0000;
+}
+
+.half-circle-top{
+  background-color: #fff;
+}
+
+.progress-bar:hover .half-circle-top{
+  opacity: 0;
+  transition: opacity 0s 1s;
+}
+
+.progress-bar:hover .half-circle:nth-child(1){
+  transform: rotate(180deg);
+  transition: transform 1s linear;
+}
+
+.progress-bar:hover .half-circle:nth-child(2){
+  transform: rotate(360deg);
+  transition: transform 2s linear;
+}
+
+.progress-bar-circle{
+  width: 7.5rem;
+  height: 7.5rem;
+  background-color: #000000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 3.5rem;
+  z-index: 200;
+}
+/*end of progress bar*/
+
+
+/*navigation*/
 /*menu icon*/
 .menu-icon{
   position: fixed;
@@ -293,7 +354,7 @@ html{
   width: 22rem;
   height: 22rem;
   border-radius: 50%;
-  background-color: red;
+  background-color: #ff0000;
   align-self: center;
   justify-self: center;
   opacity: 0.5;
@@ -450,7 +511,7 @@ html{
   height: 45rem;
   overflow: hidden;
   margin: 5rem;
-  background-color: black;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   position: relative;
