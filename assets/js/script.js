@@ -416,5 +416,10 @@ setInterval(() => {
   }, 500);
 }, 3000);
 //end of slideshow
+
+//form validation
+
+//end of form validation
+
 //end of section 5
 

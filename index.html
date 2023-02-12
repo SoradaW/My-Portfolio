@@ -191,10 +191,15 @@
       <div class="form-wrapper">
         <h2 class="form-heading">Let's Talk</h2>
         <form class="contact-form center">
-          <input type="text" class="contact-form-input pointer-enter" placeholder="Name">
-          <input type="email" class="contact-form-input pointer-enter" placeholder="Email">
-          <input type="text" class="contact-form-input pointer-enter" placeholder="Subject">
-          <textarea class="contact-form-input contact-form-textarea pointer-enter" placeholder="Message"></textarea>
+          <input type="text" class="contact-form-input pointer-enter" placeholder="Name" id="name">
+          <p class="message">Error Message</p> 
+          <input type="email" class="contact-form-input pointer-enter" placeholder="Email" id="email">
+          <p class="message">Error Message</p>
+          <input type="text" class="contact-form-input pointer-enter" placeholder="Subject" id="subject">
+          <p class="message">Error Message</p>
+          <textarea class="contact-form-input contact-form-textarea pointer-enter" placeholder="Message" id="message">
+            <p class="message">Error Message</p>
+          </textarea>
           <input type="submit" class="form-submit-btn pointer-enter" value="Send Request" />
         </form>
       </div>

@@ -775,6 +775,17 @@ html {
   font-size: 1.8rem;
   color: #fff;
 }
+
+/*form validation*/
+.message {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f55e5e;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 0 auto 1rem 0;
+}
+/*end of form validation*/
 /*end of form*/
 
 /*slideshow*/
