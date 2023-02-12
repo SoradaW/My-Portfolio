@@ -82,6 +82,26 @@ mainBtns.forEach((btn) => {
 })
 //end of main button
 
+//navigation
+const menuIcon = document.querySelector(".menu-icon");
+const navbar = document.querySelector(".navbar");
+
+document.addEventListener("scroll", () => {
+  menuIcon.classList.add("show-menu-icon");
+  navbar.classList.add("hide-navbar");
+
+  if(window.scrollY === 0){
+    menuIcon.classList.remove("show-menu-icon");
+    navbar.classList.remove("hide-navbar");
+  }
+});
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.remove("show-menu-icon");
+  navbar.classList.remove("hide-navbar");
+});
+//end of navigation
+
 //about me text
 const aboutMeText = document.querySelector(".about-me-text");
 const aboutMeTextContent = "สวัสดี (Hello), I'm a big believer in learning by doing and having fun!";

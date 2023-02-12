@@ -199,6 +199,67 @@ html{
 }
 /*end of page bg*/
 
+/*navigation*/
+
+/*menu icon*/
+.menu-icon{
+  position: fixed;
+  top: 0;
+  right: 6rem;
+  width: 12rem;
+  height: 7rem;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  
+}
+
+.menu-icon-line{
+  width: 4rem;
+  height: 0.1rem;
+  background-color: #fff;
+  margin: 0.5rem 0;
+  box-shadow: 0 0.3rem 0.5rem black;
+}
+
+.show-menu-icon{
+  opacity: 1;
+  visibility: visible;
+}
+/*end of menu icon*/
+
+/*navbar*/
+.navbar{
+  position: fixed;
+  top: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  z-index: 100;
+  transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+}
+
+.navbar-link{
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 2.5rem;
+  text-shadow: 0 0.3rem 0.5rem black;
+}
+
+.hide-navbar{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10rem);
+}
+/*end of navbar*/
+/*end of navigation*/
+
 /*section 1*/
 .section-1{
   position: relative;
