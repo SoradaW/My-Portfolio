@@ -2,8 +2,12 @@
 const mouseCircle = document.querySelector(".mouse-circle");
 const mouseDot = document.querySelector(".mouse-dot");
 
+let mouseCircleBool = true;
+
 const mouseCircleFn = (x, y) =>{
-  mouseCircle.style.cssText = `top: ${y}px; left: ${x}px; opacity:1`;
+  mouseCircleBool && 
+  (mouseCircle.style.cssText = `top: ${y}px; left: ${x}px; opacity:1`);
+ 
   mouseDot.style.cssText = `top:${y}px; left:${x}px; opacity:1`;
 };
 //end of mouse circle
@@ -67,8 +71,39 @@ const stickyElement = (x, y, hoveredEl) => {
     };
   };
   //end of sticky element
-
 };
+
+//mouse circle transform
+const mouseCircleTransform = (hoveredEl) => {
+  if (hoveredEl.classList.contains("pointer-enter")) {
+    hoveredEl.onmousemove = () => {
+      mouseCircleBool = false;
+      mouseCircle.style.cssText = `
+      width: ${hoveredEl.getBoundingClientRect().width}px;
+      height: ${hoveredEl.getBoundingClientRect().height}px;
+      top: ${hoveredEl.getBoundingClientRect().top}px;
+      left: ${hoveredEl.getBoundingClientRect().left}px;
+      opacity: 1;
+      transform: translate(0, 0);
+      animation: none;
+      border-radius: ${getComputedStyle(hoveredEl).borderBottomLeftRadius};
+      transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s, transform 0.5s, border-radius 0.5s;
+      `;
+    };
+
+    hoveredEl.onmouseleave = () => {
+      mouseCircleBool = true;
+    };
+
+    document.onscroll = () => {
+      if (!mouseCircleBool) {
+        mouseCircle.style.top = `${hoveredEl.getBoundingClientRect().top}px`;
+      };
+    };
+  };
+};
+
+//end of mouse circle transform
 
 document.body.addEventListener("mousemove", (e) =>{
   let x = e.clientX;
@@ -79,6 +114,8 @@ document.body.addEventListener("mousemove", (e) =>{
   
   const hoveredEl = document.elementFromPoint(x, y);
   stickyElement(x, y, hoveredEl);
+
+  mouseCircleTransform(hoveredEl);
 });
 
 document.body.addEventListener("mouseleave", () =>{
@@ -190,7 +227,7 @@ const scrollFn = () => {
   if(window.scrollY === 0){
     menuIcon.classList.remove("show-menu-icon");
     navbar.classList.remove("hide-navbar");
-  }
+  };
 
   progressBarFn();
 };
@@ -246,6 +283,8 @@ projects.forEach((project, i) => {
     document.body.style.overflowY = "hidden";
 
     document.removeEventListener("scroll", scrollFn);
+
+    mouseCircle.style.opacity = 0;
 
     progressBarFn(bigImgWrapper);
 
