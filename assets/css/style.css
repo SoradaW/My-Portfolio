@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&display=swap');
 
 /*common styles*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,19 +13,19 @@
   font-family: 'Rubik', sans-serif;
 }
 
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /*main button*/
-.main-btn{
+.main-btn {
   position: absolute;
   bottom: 3rem;
   width: 13rem;
@@ -37,7 +37,7 @@ html{
   overflow: hidden;
 }
 
-.main-btn-content{
+.main-btn-content {
   width: 100%;
   height: 100%;
   border: 0.2rem dotted #e7be08;
@@ -46,13 +46,13 @@ html{
   transition: transform 0.2s, border 0.2s;
 }
 
-.main-btn:hover .main-btn-content{
+.main-btn:hover .main-btn-content {
   transform: rotate(60deg);
   border: 0.2rem dotted #9b0e0e;
   transition: transform 0.2s 0.5s, border 0.2s;
 }
 
-.main-btn-line{
+.main-btn-line {
   position: absolute;
   top: 4rem;
   width: 3rem;
@@ -60,24 +60,24 @@ html{
   border: 0.1rem solid #fff;
 }
 
-.main-btn-line:nth-child(1){
+.main-btn-line:nth-child(1) {
   transform: rotateZ(-45deg) translate(-.65rem);
   transform-origin: left center;
   border-right: none;
 }
 
-.main-btn-line:nth-child(2){
+.main-btn-line:nth-child(2) {
   transform: rotateZ(45deg) translate(.65rem);
   transform-origin: right center;
   border-left: none;
 }
 
-.main-btn-line:nth-child(3){
+.main-btn-line:nth-child(3) {
   transform: rotateZ(90deg) translate(.5rem);
   border-left: none;
 }
 
-.main-btn span{
+.main-btn span {
   position: absolute;
   bottom: 3rem;
   color: #fff;
@@ -86,7 +86,7 @@ html{
   text-transform: uppercase;
 }
 
-.ripple{
+.ripple {
   position: absolute;
   width: 0;
   height: 0;
@@ -96,7 +96,7 @@ html{
   animation: rippleAnim 0.5s forwards;
 }
 
-@keyframes rippleAnim{
+@keyframes rippleAnim {
   0% {
     width: 0;
     height: 0;
@@ -109,7 +109,7 @@ html{
 /*end of main button*/
 
 /*section heading*/
-.section-heading{
+.section-heading {
   font-size: 2rem;
   font-weight: 300;
   color: #fff;
@@ -127,7 +127,7 @@ html{
 
 /*mouse circle*/
 .mouse-circle,
-.mouse-dot{
+.mouse-dot {
   border-radius: 50%;
   position: fixed;
   z-index: 300;
@@ -136,14 +136,14 @@ html{
   pointer-events: none;
 }
 
-.mouse-circle{
+.mouse-circle {
   width: 6rem;
   height: 6rem;
   border: 0.1rem solid #c7a622;
   animation: mouseCircleAnim 10s infinite linear;
 }
 
-@keyframes mouseCircleAnim{
+@keyframes mouseCircleAnim {
   0%{
     width: 6rem;
     height: 6rem;
@@ -166,14 +166,14 @@ html{
   }
 }
 
-.mouse-dot{
+.mouse-dot {
   width: 0.5rem;
   height: 0.5rem;
   background-color: #9b0e0e;
   animation: mouseDotAnim 10s infinite linear;
 }
 
-@keyframes mouseDotAnim{
+@keyframes mouseDotAnim {
   0%{
     width: 0.5rem;
     height: 0.5rem;
@@ -190,7 +190,7 @@ html{
 /*end of mouse circle*/
 
 /*page bg*/
-.page-bg{
+.page-bg {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -200,7 +200,7 @@ html{
 /*end of page bg*/
 
 /*progress bar*/
-.progress-bar{
+.progress-bar {
   position: fixed;
   bottom: 4rem;
   right: 4rem;
@@ -214,7 +214,7 @@ html{
 }
 
 .half-circle, 
-.half-circle-top{
+.half-circle-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -224,34 +224,34 @@ html{
   pointer-events: none;
 }
 
-.half-circle:nth-child(1){
+.half-circle:nth-child(1) {
   background-color: #ff0000;
 }
 
-.half-circle:nth-child(2){
+.half-circle:nth-child(2) {
   background-color: #ff0000;
 }
 
-.half-circle-top{
+.half-circle-top {
   background-color: #fff;
 }
 
-/*.progress-bar:hover .half-circle-top{
+/*.progress-bar:hover .half-circle-top {
   opacity: 0;
   transition: opacity 0s 1s;
 }
 
-.progress-bar:hover .half-circle:nth-child(1){
+.progress-bar:hover .half-circle:nth-child(1) {
   transform: rotate(180deg);
   transition: transform 1s linear;
 }
 
-.progress-bar:hover .half-circle:nth-child(2){
+.progress-bar:hover .half-circle:nth-child(2) {
   transform: rotate(360deg);
   transition: transform 2s linear;
 }*/
 
-.progress-bar-circle{
+.progress-bar-circle {
   width: 7.5rem;
   height: 7.5rem;
   background-color: #000000;
@@ -267,7 +267,7 @@ html{
 
 /*navigation*/
 /*menu icon*/
-.menu-icon{
+.menu-icon {
   position: fixed;
   top: 3.5rem;
   right: 0;
@@ -283,7 +283,7 @@ html{
   
 }
 
-.menu-icon-line{
+.menu-icon-line {
   width: 4rem;
   height: 0.1rem;
   background-color: #fff;
@@ -291,14 +291,14 @@ html{
   box-shadow: 0 0.3rem 0.5rem black;
 }
 
-.show-menu-icon{
+.show-menu-icon {
   opacity: 1;
   visibility: visible;
 }
 /*end of menu icon*/
 
 /*navbar*/
-.navbar{
+.navbar {
   position: fixed;
   top: 2.5rem;
   width: 100%;
@@ -309,7 +309,7 @@ html{
   transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
 }
 
-.navbar-link{
+.navbar-link {
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -318,7 +318,7 @@ html{
   text-shadow: 0 0.3rem 0.5rem black;
 }
 
-.hide-navbar{
+.hide-navbar {
   opacity: 0;
   visibility: hidden;
   transform: translateX(10rem);
@@ -327,14 +327,14 @@ html{
 /*end of navigation*/
 
 /*section 1*/
-.section-1{
+.section-1 {
   position: relative;
   width: 100%;
   height: 100vh;
 }
 
 /*logo*/
-.logo{
+.logo {
   position: absolute;
   top: 2rem;
   left: 5rem;
@@ -344,7 +344,7 @@ html{
 }
 
 /*animated circles*/
-.circles{
+.circles {
   position: absolute;
   top: 0;
   left: 0;
@@ -355,7 +355,7 @@ html{
   grid-template-rows: repeat(2, 1fr);
 }
 
-.circle{
+.circle {
   width: 22rem;
   height: 22rem;
   border-radius: 50%;
@@ -369,7 +369,7 @@ html{
   transition: left 2s, top 2s;
 }
 
-.circle-1{
+.circle-1 {
   background: url(../images/bg-img/calm.jpg) center no-repeat;
   background-size: cover;
   background-clip: content-box;
@@ -377,7 +377,7 @@ html{
   margin-left: -10rem;
 }
 
-.circle-2{
+.circle-2 {
   background: url(../images/bg-img/coffee.jpg) center no-repeat;
   background-size: cover;
   background-clip: content-box;
@@ -385,7 +385,7 @@ html{
   margin-right: -10rem;
 }
 
-.circle-3{
+.circle-3 {
   background: url(../images/bg-img/book.jpg) center no-repeat;
   background-size: cover;
   background-clip: content-box;
@@ -393,7 +393,7 @@ html{
   margin-left: -10rem;
 }
 
-.circle-4{
+.circle-4 {
   background: url(../images/bg-img/meditation.jpg) center no-repeat;
   background-size: cover;
   background-clip: content-box;
@@ -401,7 +401,7 @@ html{
   margin-right: -10rem;
 }
 
-.main-circle{
+.main-circle {
   width: 55rem;;
   height: 55rem;
   position: absolute;
@@ -410,12 +410,12 @@ html{
   transition: width 0.2s, height 0.2s;
 }
 
-.main-circle:hover{
+.main-circle:hover {
   width: 75rem;
   height: 75rem;
 }
 
-.main-circle img{
+.main-circle img {
   mix-blend-mode: hard-light;
   position: relative;
   top: 0;
@@ -425,7 +425,7 @@ html{
 /*end of animated circles*/
 
 /*featured text*/
-.featured-text{
+.featured-text {
   font-size: 2rem;
   color: #fff;
   text-transform: uppercase;
@@ -436,11 +436,11 @@ html{
   top: 0;
 }
 
-.featured-text-1{
+.featured-text-1 {
   margin: 0 auto 0 10rem;
 }
 
-.featured-text-2{
+.featured-text-2 {
   margin: 0 10rem 0 auto;
 }
 /*end of featured text*/
@@ -453,12 +453,12 @@ html{
 }
 
 /*about me text*/
-.about-me-text{
+.about-me-text {
   width: 80%;
   margin: auto;
 }
 
-.about-me-text span{
+.about-me-text span {
   font-family: "Poppins", sans-serif;
   font-size: 15rem;
   font-weight: bold;
@@ -488,7 +488,7 @@ html{
 /*end of about me text*/
 
 /*section 2 main button*/
-.section-2 .main-btn{
+.section-2 .main-btn {
   left: 50%;
   bottom: -5rem;
   transform: translateX(-50%);
@@ -497,7 +497,7 @@ html{
 /*end of section 2*/
 
 /*section 3*/
-.section-3{
+.section-3 {
   width: 100%;
   height: 100%;
   padding: 10rem 0;
@@ -506,12 +506,12 @@ html{
 }
 
 /*projects*/
-.projects{
+.projects {
   flex-wrap: wrap;
   padding-bottom: 15rem;
 }
 
-.project{
+.project {
   width: 40rem;
   height: 45rem;
   overflow: hidden;
@@ -527,7 +527,7 @@ html{
   transition: opacity 0.5s;
 }
 
-.project img{
+.project img {
   width: 90%;
   object-fit: cover;
   position: absolute;
@@ -537,12 +537,12 @@ html{
   transition: top 4s 0.2s, opacity 0.2s;
 }
 
-.project:nth-child(odd):hover img{
+.project:nth-child(odd):hover img {
   animation: oddImgAnim 4s 0.2s;
   opacity: 1;
 }
 
-@keyframes oddImgAnim{
+@keyframes oddImgAnim {
   0% {
     transform: rotateY(0);
   }
@@ -557,12 +557,12 @@ html{
   }
 }
 
-.project:nth-child(even):hover img{
+.project:nth-child(even):hover img {
   animation: evenImgAnim 4s 0.2s;
   opacity: 1;
 }
 
-@keyframes evenImgAnim{
+@keyframes evenImgAnim {
   0% {
     transform: rotateY(0);
   }
@@ -578,7 +578,7 @@ html{
 }
 
 /*big project img*/
-.project-img-wrapper{
+.project-img-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -591,7 +591,7 @@ html{
   animation: imgWrapperAnim 1s forwards;
 }
 
-@keyframes imgWrapperAnim{
+@keyframes imgWrapperAnim {
   0% {
     height: 0;
   }
@@ -600,7 +600,7 @@ html{
   }
 }
 
-.project-img{
+.project-img {
   width: 100%;;
   border-radius: 0.5rem;
   padding: 7rem 20rem;
@@ -610,7 +610,7 @@ html{
   animation: imgAnim 1s 1s both;
 }
 
-@keyframes imgAnim{
+@keyframes imgAnim {
   0% {
     transform: scale(0);
   }
@@ -621,7 +621,7 @@ html{
 /*end of big project img*/
 
 /*project hide button*/
-.project-hide-btn{
+.project-hide-btn {
   position: fixed;
   top: 5rem;
   right: 5rem;
@@ -636,7 +636,7 @@ html{
   visibility: hidden;
 }
 
-.change.project-hide-btn{
+.change.project-hide-btn {
   transform: scale(1);
   visibility: visible;
   transition: transform 0.5s;
@@ -645,7 +645,7 @@ html{
 /*end of projects*/
 
 /*projects button*/
-.projects-btn{
+.projects-btn {
   left: 50%;
   transform: translateX(-50%);
 }
@@ -654,15 +654,15 @@ html{
   transition: all 0.5s;
 }
 
-.change > .main-btn-line:nth-child(1){
+.change > .main-btn-line:nth-child(1) {
   transform: rotateZ(45deg) translateX(-0.65rem);
 }
 
-.change > .main-btn-line:nth-child(2){
+.change > .main-btn-line:nth-child(2) {
   transform: rotateZ(-45deg) translateX(0.65rem);
 }
 
-.change > .main-btn-line:nth-child(3){
+.change > .main-btn-line:nth-child(3) {
   transform: rotateZ(90deg) translateX(-0.5rem);
   border-left: 0.1rem solid #fff;
   border-right: none;
@@ -677,25 +677,25 @@ html{
 }
 
 /*services*/
-.services-wrapper{
+.services-wrapper {
   width: 100%;
   flex-direction: column;
 }
 
-.service{
+.service {
   width: 70%;
   margin: 2rem 0;
   border-bottom: 0.5rem solid #9b0e0e;
 }
 
-.service-btn{
+.service-btn {
   width: 100%;
   position: relative;
   display: block;
   height: 15rem;
 }
 
-.service-btn span{
+.service-btn span {
   font-family: "Poppins", sans-serif;
   font-size: 10rem;
   font-style: italic;
@@ -707,7 +707,7 @@ html{
   transition: right 0.5s;
 }
 
-.service-text{
+.service-text {
   font-size: 5rem;
   color: #777;
   letter-spacing: 0.1rem;
@@ -717,7 +717,7 @@ html{
   transition: all 0.2s;
 }
 
-.change.service-text{
+.change.service-text {
   height: 15rem;
   visibility: visible;
   opacity: 1;
@@ -727,14 +727,14 @@ html{
 /*end of section 4*/
 
 /*section 5*/
-.section-5{
+.section-5 {
   position: relative;
   height: 100vh;
   flex-direction: column;
 }
 
 /*form*/
-.form-heading{
+.form-heading {
   font-family: "Poppins", sans-serif;
   font-size: 6rem;
   font-weight: 400;
@@ -745,11 +745,11 @@ html{
   transition: opacity 0.3s;
 }
 
-.contact-form{
+.contact-form {
   flex-direction: column;
 }
 
-.contact-form-input{
+.contact-form-input {
   width: 60rem;
   padding: 0.5rem;
   margin: 1rem 0;
@@ -761,12 +761,12 @@ html{
   height: 5rem;
 }
 
-.contact-form-textarea{
+.contact-form-textarea {
   height: 20rem;
   resize: none;
 }
 
-.form-submit-btn{
+.form-submit-btn {
   width: 20rem;
   height: 5rem;
   background-color: #9b0e0e;
@@ -778,44 +778,157 @@ html{
 /*end of form*/
 
 /*slideshow*/
-.slideshow{
+.slideshow {
   display: flex;
   width: 50rem;
   margin-top: 10rem;
   padding: 0 2rem;
 }
 
-.slideshow-link{
+.slideshow-link {
   width: 20%;
   filter: brightness(0.5);
   transition: filter 1.5s;
 }
 
 .slideshow-link:nth-child(1), 
-.slideshow-link:nth-child(5){
+.slideshow-link:nth-child(5) {
   transition: width 0.5s,
   opacity 0.5s;
 }
 
-.slideshow-link:nth-child(3){
+.slideshow-link:nth-child(3) {
   transition: filter 0.5s;
 }
 
-.slideshow-link img{
+.slideshow-link img {
   width: 100%;
   padding: 0 1rem;
 }
 
-.faded-out{
+.faded-out {
 opacity: 0;
 width: 0;
 }
 
-.light{
+.light {
   filter: brightness(1);
 }
 /*end of slideshow*/
 /*end of section 5*/
 
+/*resposive*/
+@media (max-width: 1500px) {
+  .circle {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .main-circle {
+    width: 45rem;
+    height: 45rem;
+  }
+
+  .main-circle:hover {
+    width: 55rem;
+    height: 55rem;
+  }
+  .main-circle img {
+    width: 160%;
+    height: 160%;
+  }
+
+  .about-me-text span {
+    font-size: 11rem;
+  }
+
+  .section-4 {
+    margin-bottom: 10rem;
+  }
+
+  .service-btn span {
+    font-size: 9rem;
+  }
+
+  .service-text {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .main-btn {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .progress-bar {
+    right: 1rem;
+    bottom: 0;
+  }
+
+  .about-me-text span{
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  html {
+    font-size: 55%;
+  }
+
+  .mouse-circle,
+  .mouse-dot {
+    display: none;
+  }
+
+  .navbar-link {
+    margin: 0 2rem;
+  }
+  
+  .main-circle {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .main-circle:hover {
+    width: 45rem;
+    height: 45rem;
+  }
+
+  .about-me-text span {
+    font-size: 7.5rem;
+  }
+
+  .project-img {
+    padding: 7rem 11rem;
+  }
+
+  .project-hide-btn {
+    right: 2rem;
+  }
+
+  .service-btn {
+    height: 12rem;
+  }
+
+  .service-btn span {
+    font-size: 8rem;
+  }
+
+  .service-text {
+    font-size: 3.5rem;
+  }
+
+  .slideshow {
+    margin: 5rem 0;
+  }
+}
+
+
+/*end of resposive*/
 
 
