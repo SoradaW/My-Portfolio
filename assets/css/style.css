@@ -202,14 +202,15 @@ html{
 /*progress bar*/
 .progress-bar{
   position: fixed;
-  bottom: 8rem;
-  right: 8rem;
+  bottom: 4rem;
+  right: 4rem;
   width: 8rem;
   height: 8rem;
   background-color: #fff;
   border-radius: 50%;
   z-index: 200;
   overflow: hidden;
+  transform: translate(-50%, -50%);
 }
 
 .half-circle, 
@@ -220,6 +221,7 @@ html{
   width: 50%;
   height: 100%;
   transform-origin: right center;
+  pointer-events: none;
 }
 
 .half-circle:nth-child(1){
@@ -258,6 +260,7 @@ html{
   font-size: 3.5rem;
   z-index: 200;
   transition: transform 0.5s;
+  pointer-events: none;
 }
 /*end of progress bar*/
 
@@ -266,8 +269,8 @@ html{
 /*menu icon*/
 .menu-icon{
   position: fixed;
-  top: 0;
-  right: 6rem;
+  top: 3.5rem;
+  right: 0;
   width: 12rem;
   height: 7rem;
   flex-direction: column;
@@ -275,6 +278,7 @@ html{
   visibility: hidden;
   z-index: 100;
   cursor: pointer;
+  transform: translate(-50%, -50%);
   transition: opacity 0.2s;
   
 }
