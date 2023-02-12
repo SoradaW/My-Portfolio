@@ -234,7 +234,7 @@ html{
   background-color: #fff;
 }
 
-.progress-bar:hover .half-circle-top{
+/*.progress-bar:hover .half-circle-top{
   opacity: 0;
   transition: opacity 0s 1s;
 }
@@ -247,7 +247,7 @@ html{
 .progress-bar:hover .half-circle:nth-child(2){
   transform: rotate(360deg);
   transition: transform 2s linear;
-}
+}*/
 
 .progress-bar-circle{
   width: 7.5rem;
@@ -257,6 +257,7 @@ html{
   color: #fff;
   font-size: 3.5rem;
   z-index: 200;
+  transition: transform 0.5s;
 }
 /*end of progress bar*/
 

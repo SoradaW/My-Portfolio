@@ -82,6 +82,58 @@ mainBtns.forEach((btn) => {
 })
 //end of main button
 
+//progress bar
+const sections = document.querySelectorAll("section");
+const progressBar = document.querySelector(".progress-bar");
+const halfCircles = document.querySelectorAll(".half-circle");
+const halfCircleTop = document.querySelector(".half-circle-top");
+const progressBarCircle = document.querySelector(".progress-bar-circle")
+
+const progressBarFn = () => {
+  const pageViewportHeight = window.innerHeight;
+  const pageHeight = document.documentElement.scrollHeight;
+  const scrolledPortion = window.pageYOffset;
+
+  const scrolledPortionDegree = (scrolledPortion/ (pageHeight - pageViewportHeight)) *360;
+
+  halfCircles.forEach(el => {
+    el.style.transform = `rotate(${scrolledPortionDegree}deg)`;
+
+    if(scrolledPortionDegree >= 180){
+      halfCircles[0].style.transform = "rotate(180deg)";
+      halfCircleTop.style.opacity = "0";
+    } else {
+      halfCircleTop.style.opacity = "1";
+    };
+  });
+
+  const scrollBool = scrolledPortion + pageViewportHeight === pageHeight;
+
+  //progress bar on click
+  progressBar.onclick = (e) => {
+    e.preventDefault();
+
+    const sectionPositions = Array.from(sections).map((section) => scrolledPortion + section.getBoundingClientRect().top
+    );
+
+    const position = sectionPositions.find(sectionPositions => {
+      return sectionPositions > scrolledPortion
+    });
+
+    scrollBool ? window.scrollTo(0, 0) : window.scrollTo(0, position);
+  };
+
+  //arrow rotation
+  if(scrollBool) {
+    progressBarCircle.style.transform = "rotate(180deg)";
+  } else {
+    progressBarCircle.style.transform = "rotate(0)";
+  };
+};
+
+progressBarFn();
+//end of progress bar
+
 //navigation
 const menuIcon = document.querySelector(".menu-icon");
 const navbar = document.querySelector(".navbar");
@@ -94,6 +146,8 @@ document.addEventListener("scroll", () => {
     menuIcon.classList.remove("show-menu-icon");
     navbar.classList.remove("hide-navbar");
   }
+
+  progressBarFn();
 });
 
 menuIcon.addEventListener("click", () => {
