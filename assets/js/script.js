@@ -89,17 +89,21 @@ const halfCircles = document.querySelectorAll(".half-circle");
 const halfCircleTop = document.querySelector(".half-circle-top");
 const progressBarCircle = document.querySelector(".progress-bar-circle")
 
-const progressBarFn = (bigImgWrapper = false) => {
+let scrolledPortion = 0;
+let scrollBool = false;
+let imageWrapper = false;
+
+const progressBarFn = (bigImgWrapper) => {
+  imageWrapper = bigImgWrapper;
   let pageHeight = 0;
-  let scrolledPortion = 0;
   const pageViewportHeight = window.innerHeight;
 
-  if(!bigImgWrapper){
+  if(!imageWrapper){
     pageHeight = document.documentElement.scrollHeight;
     scrolledPortion = window.pageYOffset;
   } else {
-    pageHeight = bigImgWrapper.firstElementChild.scrollHeight;
-    scrolledPortion = bigImgWrapper.scrollTop;
+    pageHeight = imageWrapper.firstElementChild.scrollHeight;
+    scrolledPortion = imageWrapper.scrollTop;
   }
 
     const scrolledPortionDegree = (scrolledPortion/ (pageHeight - pageViewportHeight)) *360;
@@ -115,13 +119,22 @@ const progressBarFn = (bigImgWrapper = false) => {
     };
   });
 
-  const scrollBool = scrolledPortion + pageViewportHeight === pageHeight;
+  scrollBool = scrolledPortion + pageViewportHeight === pageHeight;
+
+  //arrow rotation
+  if(scrollBool) {
+    progressBarCircle.style.transform = "rotate(180deg)";
+  } else {
+    progressBarCircle.style.transform = "rotate(0)";
+  };
+};
+  //end of arrow rotation
 
   //progress bar on click
-  progressBar.onclick = (e) => {
+  progressBar.addEventListener ("click", e => {
     e.preventDefault();
 
-    if (!bigImgWrapper) {
+    if (!imageWrapper) {
     const sectionPositions = Array.from(sections).map((section) => scrolledPortion + section.getBoundingClientRect().top
     );
 
@@ -131,17 +144,10 @@ const progressBarFn = (bigImgWrapper = false) => {
 
     scrollBool ? window.scrollTo(0, 0) : window.scrollTo(0, position);
     } else {
-      scrollBool ? bigImgWrapper.scrollTo(0, 0) : bigImgWrapper.scrollTo(0, bigImgWrapper.scrollHeight)
+      scrollBool ? imageWrapper.scrollTo(0, 0) : imageWrapper.scrollTo(0, imageWrapper.scrollHeight)
     };
-  };
-
-  //arrow rotation
-  if(scrollBool) {
-    progressBarCircle.style.transform = "rotate(180deg)";
-  } else {
-    progressBarCircle.style.transform = "rotate(0)";
-  };
-};
+  });
+  //end of progress bar on click
 
 progressBarFn();
 //end of progress bar
