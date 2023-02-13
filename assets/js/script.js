@@ -469,7 +469,7 @@ form.addEventListener("submit", e => {
   checkEmail(email);
   checkRequiredFields([username, email, subject, message]);
 
-  const notValid = Array.form(messages).find((message) => {
+  const notValid = Array.from(messages).find((message) => {
     return message.classList.contains("error");
   });
 
