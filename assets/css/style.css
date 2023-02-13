@@ -1062,6 +1062,16 @@ width: 0;
     font-size: 5rem;
   }
 }
+
+@media (max-width: 300px) {
+  html {
+    font-size: 35%;
+  }
+
+  .contact-form-input {
+    width: 30rem;
+  }
+}
 /*end of resposive*/
 
 
