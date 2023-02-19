@@ -1,16 +1,23 @@
 # My-Portfolio
 
+## Objectives
+
 This is the repository for my personal portfolio site.
 
-My goals and objectives:
 1. To presents myself and how to contact me
 2. To learn and practice HTML, CSS, Bootstrap and JavaScript
 3. To create a clean, readable on various screens and devices  
 4. To grow my knowledge and developing of my portfolio site
 
-![My portfolio site](/*images/myPorfolio-webCapture.png)
+Take a look at [My Portfolio](https://soradaw.github.io/My-Portfolio/)
 
-[Live Portfolio](https://soradaw.github.io/My-Portfolio/)
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
 
 ## Instructions
 
@@ -25,6 +32,8 @@ My goals and objectives:
 ## License
 
 There is no license - However, my contact details may not be used for sales or marketing, and may not be sold or provided to anyone without my express consent. My contact details may be used only for the purpose of demonstrating and for potential job or work opportunities. 
+
+Any futher questions, please [Email Me](sorada.wright@gmail.com)
 
 ---
 
