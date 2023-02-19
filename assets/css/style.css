@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 /*common styles*/
 * {
@@ -10,7 +10,7 @@
   text-decoration: none;
   list-style-type: none;
   outline: none;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Handlee', sans-serif;
 }
 
 html {
@@ -767,6 +767,7 @@ html {
 }
 
 .form-submit-btn {
+  font-family: 'Poppins', sans-serif;
   width: 20rem;
   height: 5rem;
   background-color: #9b0e0e;
@@ -837,7 +838,7 @@ width: 0;
 /*end of section 5*/
 
 /*resposive*/
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .circle {
     width: 15rem;
     height: 15rem;
